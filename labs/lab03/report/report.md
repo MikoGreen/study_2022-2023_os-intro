@@ -1,8 +1,8 @@
 ---
 ## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+title: "Отчёт по лабораторной работе №3"
+subtitle: "Операционные системы"
+author: "Надежда Александровна Рогожина, НКАбд-02-22"
 
 ## Generic otions
 lang: ru-RU
@@ -68,25 +68,71 @@ header-includes:
 
 # Цель работы
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
-
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+Научиться оформлять отчёты с помощью легковесного языка разметки Markdown.
 
 # Задание
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+- Сделайте отчёт по предыдущей лабораторной работе в формате Markdown.
+
+- В качестве отчёта просьба предоставить отчёты в 3 форматах: pdf, docx и md (в архиве,
+поскольку он должен содержать скриншоты, Makefile и т.д.
 
 # Теоретическое введение
 
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
+1. Чтобы создать заголовок, используйте знак ('#'), например:
 
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
+	`# This is heading 1`
+	
+	`## This is heading 2`
+	
+	`### This is heading 3`
+	
+	`#### This is heading 4`
+	
+2. Выделение:
+
+	This text is **bold**
+	
+3. Курсив:
+
+	This text is *italic*
+	
+4. Полужирный курсив:
+
+	This text is both ***bold and italic***
+	
+5. Цитирование:
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive ```
+
+6. Маркированный список можно отформатировать с помощью звёздочек или тире:
+
+- List item 1
+	
+- List item 2
+	
+- List item 3
+	
+7. Упорядоченный список:
+
+	1. First instruction
+
+	2. Second instruction
+
+	3. Third instruction
+	
+8. Ссылки:
+
+	```[link text](file-name.md)```
+	
+9. Код:
+
+``` language
+your code goes in here
+```
+10. Оформление таблиц:
+
+В табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
 
 : Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
 
@@ -101,19 +147,45 @@ header-includes:
 | `/tmp`       | Временные файлы                                                                                                            |
 | `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
 
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
-
 # Выполнение лабораторной работы
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
+Первым шагом сделаем титульный лист нашего отчёта (рис. @fig:001):
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+![Титульный лист](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/1.png){#fig:001 width=70%}
+
+Напишем цель и задачи лабораторной работы (рис. @fig:002, @fig:003):
+
+![Цель работы](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/2.png){#fig:002 width=70%}
+
+![Задачи работы](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/3.png){#fig:003 width=70%}
+
+Формируем теоретическое введение (рис. @fig:004, @fig:005):
+
+![Теоретическое введение](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/4.png){#fig:004 width=70%}
+
+![Теоретическое введение](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/5.png){#fig:005 width=70%}
+
+Описываем выполнение лабораторной работы (рис. @fig:006):
+
+![Выполнение ЛР](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/6.png){#fig:006 width=70%}
+
+Описываем выводы и отвечаем на контрольные вопросы (рис. @fig:007, @fig:008):
+
+![Выводы и контрольные вопросы](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/7.png){#fig:007 width=70%}
+
+![Контрольные вопросы](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/8.png){#fig:008 width=70%}
+
+Добавляем ссылки на источники (рис. @fig:009):
+
+![Ссылки](/home/narogozhina/work/study/2022-2023/Операционные системы/os-intro/labs/lab03/report/image/9.png){#fig:009 width=70%}
 
 # Выводы
 
-Здесь кратко описываются итоги проделанной работы.
+В ходе лабораторной работы мы научились выполнять отчеты с помощью легковесного языка разметки Markdown.
 
 # Список литературы{.unnumbered}
+
+1. [Руководство по выполнению лабораторной работы №3](https://esystem.rudn.ru/pluginfile.php/1975764/mod_resource/content/3/003-lab_markdown.pdf)
 
 ::: {#refs}
 :::
