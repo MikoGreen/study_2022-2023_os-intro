@@ -1,0 +1,12 @@
+2:appstream.conf
+10:dnsmasq.conf
+17:idmapd.conf
+18:kdump.conf
+27:makedumpfile.conf.sample
+28:man_db.conf
+29:mke2fs.conf
+30:mtools.conf
+34:nfsmount.conf
+48:swtpm-localca.conf
+49:swtpm_setup.conf
+54:usb_modeswitch.conf
