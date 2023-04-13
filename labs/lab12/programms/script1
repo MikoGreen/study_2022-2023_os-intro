@@ -1,0 +1,22 @@
+#!/bin/bash
+
+let L=5
+let W=20
+
+
+echo "The process is blocked"
+while (test -f lockfile) && ((W-=1))
+do
+	sleep 1
+	echo ${W}" sec."
+done
+touch lockfile
+echo "Process is blocking the resource"
+while (test -f lockfile) && ((L-=1))
+do
+	sleep 1
+	echo "Until unblocking: "${L}" sec."
+	echo ${L} >> resource.txt
+done
+rm lockfile
+echo "Resource is unblocked, getting out."
